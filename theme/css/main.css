@@ -1,7 +1,8 @@
 body
 {
-  font-family: Palatino, Georgia, Times, "Times New Roman", serif;
+  font-family: 'Ubuntu', serif;
   font-size: 24px;
+  line-height: 1.3em;
 }
 
 /*********/
@@ -23,10 +24,25 @@ article h4,
 article h5,
 article h6
 {
-  font-family: Verdana, Tahoma, Arial, sans;
+  font-family: 'Ubuntu', Tahoma, Arial, sans;
 }
 
-code,
+pre.code
+{
+  background: floralwhite;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+tt.docutils.literal
+{
+  background: rgb(236 236 236);
+  padding: 2px;
+  left: 4px;
+  right: 4px;
+  border-radius: 8px;
+}
+
 tt,
 kbd,
 pre,
@@ -34,7 +50,7 @@ nav > div.container,
 span.category,
 span.tag
 {
-  font-family: Courier, "Courier New", monospace;
+  font-family: 'Ubuntu Mono', "Courier New", monospace;
 }
 
 ul,
