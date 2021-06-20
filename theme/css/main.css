@@ -38,8 +38,8 @@ tt.docutils.literal
 {
   background: rgb(236 236 236);
   padding: 2px;
-  left: 4px;
-  right: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
   border-radius: 8px;
 }
 

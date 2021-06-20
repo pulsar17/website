@@ -121,7 +121,7 @@
     <link itemprop='publisher' itemscope itemtype='https://schema.org/Organization' itemref='publisher' href=''/>
     <link itemprop='mainEntityOfPage' href='/2021/06/the-beginnings'/>
     <meta itemprop='inLanguage' content='en'/>
-      <meta itemprop='wordCount' content='1595'/>
+      <meta itemprop='wordCount' content='1648'/>
 
 
     <header>
@@ -229,7 +229,7 @@ I won't go into the details of why it is so, there are some great articles about
 </div>
 <div class="section" id="gsoc-mentors-and-mentees-meet-g3m">
 <h3>GSoC Mentors and Mentees Meet (G3M)</h3>
-<p>We had our first G3M (I gave it that name, it's not official) on 11th June. All the mentors introduced themselves and told us about their backgrounds and what part of Inkscape they work on. Then students told about what they're doing currently, which university/school they're from and what project they will be doing for GSoC (We also have one project from Outreachy). There are many interesting projects this year - on canvas bool ops, markers, alignment guides, actions improvements etc.</p>
+<p>We had our first G3M (I gave it that name, it's not official) on 11th June. All the mentors introduced themselves and told us about their backgrounds and what part of Inkscape they work on. Then students told about what they're doing currently, which university/school they're from and what project they will be doing for GSoC (We also have one project from Outreachy). There are many interesting projects this year - on canvas bool ops, markers, alignment guides, actions improvements, etc.</p>
 <p>In the meeting, Marc, one of the developers, suggested us to write blogs, and communicate regularly with our mentors about our work. This G3M was scheduled on a <abbr title="Big Blue Button">BBB</abbr> instance. This is how all the developers usually communicate. That, the RocketChat instance and <abbr title="Internet Relay Chat">IRC</abbr> are the modes at our disposal.
 We were also told that we will be having more such G3Ms in the future.</p>
 <p>This was a fun experience. I got to know about the people who develop Inkscape. Together with the community they create an awesome piece of software that is Inkscape. I am glad I chose Inkscape as my org.</p>
@@ -237,11 +237,18 @@ We were also told that we will be having more such G3Ms in the future.</p>
 <div class="section" id="final-thoughts">
 <h3>Final Thoughts</h3>
 <p>This week was a light one with respect to how much I could do. I learned many new things and got to know such great people. I hope I will be able to contribute more in the coming weeks.</p>
-<div class="section" id="bonus-tip">
-<h4>Bonus Tip</h4>
-<p>If you are trying to find correlations between how this thing is done in the codebase, an intuitive way is to search for it. Should you use your IDE's search? Nah... I found VSCodium search to be ineffective sometimes so I have given up on it. Instead, I use this:</p>
+<div class="section" id="bonus-tip-just-grep-it">
+<h4>Bonus Tip: Just Grep It!</h4>
+<p>If you are trying to find correlations between how a thing is done in the codebase, an intuitive way is to search for it. Should you use your IDE's search? Nah... I found VSCodium's search to be ineffective sometimes so I have given up on it. Instead, I use this:</p>
 <pre class="code sh literal-block">
 grep -Rin <span class="s2">&quot;?next&quot;</span> .
+</pre>
+<p><strong>Example output for this search.</strong></p>
+<pre class="code literal-block">
+./content/second.rst:121:        grep -Rin &quot;?next&quot; .
+./content/second.rst:132:        grep -i &quot;?next&quot; $(find . -print) 2&gt;/dev/null
+./output/2021/06/the-beginnings.html:244:grep -Rin &lt;span class=&quot;s2&quot;&gt;&amp;quot;?next&amp;quot;&lt;/span&gt; .
+./output/2021/06/the-beginnings.html:255:grep -i &lt;span class=&quot;s2&quot;&gt;&amp;quot;?next&amp;quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;find . -print&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&amp;gt;/dev/null
 </pre>
 <div class="line-block">
 <div class="line">This is a trick I learned from one of Martin's videos <a class="footnote-reference" href="#vid" id="id3">[5]</a> (He has a YouTube channel!)</div>
