@@ -251,9 +251,26 @@ th
   font-weight: normal;
 }
 
-td
+/****************************************************************
+ * For tables that look like tickets
+ * Ideally should be in a separate css file and with its own class
+ ****************************************************************/
+
+table:not(.footnote)
 {
-  background-color: #FFC38B;
+  border: 2px dashed grey;
+  border-radius: 1rem;
+}
+
+table:not(.footnote) td
+{
+  padding:0.5rem;
+  padding-left:1rem;
+}
+
+table:not(.footnote) td + td 
+{
+  border-left: 2px dashed grey;
 }
 
 /*********************/
@@ -330,6 +347,12 @@ table.footnote td > p.last,
 table.citation td > p.last
 {
   margin-bottom: 0;
+}
+
+a.footnote-reference
+{
+  vertical-align: super;
+  font-size: .83em;
 }
 
 /***************/
