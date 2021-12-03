@@ -497,6 +497,11 @@ body > footer
   margin-top: 5rem;
 }
 
+footer img
+{
+  padding: 1rem;
+}
+
 /*******************/
 /* blog navigation */
 /*******************/
