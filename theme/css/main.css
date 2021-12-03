@@ -419,6 +419,7 @@ body > main,
 body > footer
 {
   margin: 0 auto;
+  margin-top: 5rem;
   width: 1024px;
 }
 
@@ -494,7 +495,7 @@ body > footer
 
 body > footer
 {
-  margin-top: 1em;
+  margin-top: 5rem;
 }
 
 /*******************/
